@@ -28,14 +28,14 @@ html, body, #root {
   flex-direction: column;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Applying padding to the custom rule for our main content so that the header and footer content don't overlap with it */
+.flex-min-screen-center {
+  @apply min-h-screen flex flex-col items-center p-24;
+  padding-top: 4rem; 
+  padding-bottom: 4rem; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
 

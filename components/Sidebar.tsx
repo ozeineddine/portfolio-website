@@ -12,37 +12,37 @@ interface iconDict {
   link: string;
 }
 
-const footerIconList: iconDict[] = [
+const sidebarIconList: iconDict[] = [
   {icon: faInstagram, link: "https://www.instagram.com/ozisballin/"},
   {icon: faGithub, link: "https://github.com/ozeineddine"},
   {icon: faLinkedin, link: "https://www.linkedin.com/in/omar-zeineddine/"}
 ];
 
-const Footer = () => {
+const Sidebar = () => {
   return (
     <>
-    <div className="bg-blue-600 fixed bottom-0 left-0 w-full py-4">
-      <div className="container mx-auto">
-        <footer className="flex flex-row ">
-          {footerIconList.map((item) => {
+    <div className="flex flex-col justify-end fixed bottom-0 left-0 py-4 z-2 inset-y-0 left-0 w-16 items-center">
+      <div className="container mx-auto m-4">
+        <div className="flex flex-col items-center">
+          {sidebarIconList.map((item) => {
             return (
-              <div key="{item}" className="group px-4">
+              <div className="group px-4 m-4">
                 <a target="_blank" rel="noopener noreferrer" href={item.link}>
                 <FontAwesomeIcon
                   icon={item.icon}
                   size="2x"
                   className="hover:scale-125"
-                  inverse
+                //   inverse
                 />
                 </a>
               </div>
             );
           })}
-        </footer>
+        </div>
       </div>
     </div>
     </>
   );
 };
 
-export default Footer;
+export default Sidebar;
