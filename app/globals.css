@@ -12,14 +12,11 @@
 is in dark mode. Work on later for if you want a dark color scheme.  */
 
 /* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 } */
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -31,11 +28,50 @@ html, body, #root {
 /* Applying padding to the custom rule for our main content so that the header and footer content don't overlap with it */
 .flex-min-screen-center {
   @apply min-h-screen flex flex-col items-center p-24;
-  padding-top: 4rem; 
-  padding-bottom: 4rem; 
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+#home {
+  height: 550px;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+/* Fonts Utility Classes here */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+}
