@@ -12,6 +12,9 @@ const config: Config = {
         'royal-blue': '#4169E1',
         'majorelle-blue': '#623cea',
         'brandeis-blue': '#0066ff',
+        'alabaster': '#E3E4db',
+        'gray-second': '#697477',
+        'black-olive': '#363732',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
