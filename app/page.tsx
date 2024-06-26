@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import Skill from "@components/Skill";
+import SkillsSection from "@components/SkillsSection";
 import ChangingText from "@components/ChangingText";
 
 export default function Home() {
@@ -15,7 +17,7 @@ export default function Home() {
             id="color_"
             className=" font-montserrat text-alabaster text-7xl pt-48 pl-20"
           >
-            Hi, I'm Omar Zeineddine
+            Hi! I'm Omar Zeineddine
           </h1>
           <div className="flex flex-row items-center">
             <h1 className="font-montserrat pl-24 text-5xl text-alabaster">
@@ -40,12 +42,33 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="px-20 flex flex-row items-center space-x-10 my-6">
-          <div className="flex flex-col items-start">
-            <p className="section_subtitle">Who am I?</p>
-            <p>Hey there! My name is Omar Zeineddine. I am currently a 4th-year student at the University of Virginia, majoring in computer science and minoring in data science.</p>
+        <div className=" px-20 space-x-10 flex flex-row items-center space-y-10 my-6">
+          <div className="flex flex-col items-start space-y-5">
+            <p className="section_subtitle self-center">Who am I?</p>
+            <p>
+              Hey there! My name is Omar Zeineddine. I am currently a 4th-year
+              student at the University of Virginia, majoring in computer
+              science and minoring in data science.
+            </p>
+            <p>
+              I am a currently a software engineer intern lead, working with new
+              interns to guide them through their tasks as I work through my
+              own.
+            </p>
+            <p>
+              I love developing projects on the side as well. My current project
+              in-progress involves creating a mobile app to track your
+              experiences with a map!
+            </p>
+            <p>
+              When I am not coding, I am either planning out my next trip, going
+              on a hike, or at the gym!
+            </p>
           </div>
-          <div>Here are my skills. </div>
+          <div>
+            <p className="section_subtitle">Skills</p>
+              <SkillsSection/>
+            </div>
         </div>
       </section>
 

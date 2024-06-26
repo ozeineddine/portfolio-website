@@ -124,3 +124,18 @@ body {
   font-family: roboto;
   text-align: center;
 }
+
+.skill {
+  background-color: #FAFAFF;
+  color: #697477;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 2px;
+  font-family: roboto;
+  
+}
+
+.skill:hover {
+  background-color: #623cea;
+  color: #e3e4db;
+}
