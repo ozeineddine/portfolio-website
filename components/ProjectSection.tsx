@@ -12,7 +12,7 @@ const projects = [
     title: "Course Review Application",
     image: "/images/write_review.png",
     description: "Course-Review application built using Java, JavaFX and SQLite",
-    skillList: ["Java, JavaFX, SQLite, Gradle"],
+    skillList: ["Java", "JavaFX", "SQLite", "Gradle"],
     id: 2
   },
 ];

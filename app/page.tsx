@@ -47,22 +47,22 @@ export default function Home() {
         <div className=" px-20 space-x-10 flex flex-row items-start my-6">
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center">Who am I?</p>
-            <p>
+            <p className="p1">
               Hey there! My name is Omar Zeineddine. I am currently a 4th-year
               student at the University of Virginia, majoring in computer
               science and minoring in data science.
             </p>
-            <p>
+            <p className="p1">
               I am a currently a software engineer intern lead, working with new
               interns to guide them through their tasks as I work through my
               own.
             </p>
-            <p>
+            <p className="p1">
               I love developing projects on the side as well. My current project
               in-progress involves creating a mobile app to track your
               experiences with a map!
             </p>
-            <p>
+            <p className="p1">
               When I am not coding, I am either planning out my next trip, going
               on a hike, or at the gym!
             </p>

@@ -10,6 +10,7 @@
   --alabaster: #E3E4DB;
   --picton: #00ABE7;
   --title_gray: #363732;
+  --paragraph_gray: #555555;
 
 }
 
@@ -147,7 +148,7 @@ body {
   color: var(--alabaster);
 }
 
-.projectBox {
+/* .projectBox {
   border-width: 2px;
   border-color: var(--majorelle);
   padding: 10px;
@@ -158,7 +159,7 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
 
-}
+} */
 
 .projectDescriptionBox {
   flex-grow: 1;
@@ -166,5 +167,47 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100px;
+  padding: 10px;
+  width: 100%;
+  color: var(--paragraph_gray);
+}
+
+.projectBox {
+  width: 300px;
+  height: 400px;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.projectContent {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projectBox:hover .projectContent {
+  opacity: 1;
+}
+
+.p1 {
+  color: var(--paragraph_gray);
 }
