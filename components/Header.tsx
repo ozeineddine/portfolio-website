@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const header = () => {
-  const headerList = ["Home", "About", "Experience", "Projects"];
+  const headerList = ["Home", "About", "Projects", "Contact"];
 
   return (
     <div className="items-center bg-majorelle-blue py-5 fixed top-0 left-0 w-full z-10 text-alabaster">

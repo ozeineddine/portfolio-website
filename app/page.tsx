@@ -3,6 +3,8 @@ import Link from "next/link";
 import Skill from "@components/Skill";
 import SkillsSection from "@components/SkillsSection";
 import ChangingText from "@components/ChangingText";
+import Project from "@components/Project";
+import ProjectSection from "@components/ProjectSection";
 
 export default function Home() {
   return (
@@ -42,7 +44,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className=" px-20 space-x-10 flex flex-row items-center space-y-10 my-6">
+        <div className=" px-20 space-x-10 flex flex-row items-start my-6">
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center">Who am I?</p>
             <p>
@@ -65,28 +67,30 @@ export default function Home() {
               on a hike, or at the gym!
             </p>
           </div>
-          <div>
+          <div className="self-start flex flex-col justify-start">
             <p className="section_subtitle">Skills</p>
-              <SkillsSection/>
-            </div>
+            <SkillsSection />
+          </div>
         </div>
       </section>
 
-      {/* Section 3: Experience */}
-      <section id="experience" className="w-full0">
-        <div className="flex flex-col items-center">
-          <h1 className="section_title flex flex-col items-center section_title">
-            Experience
-            <span className="divider"></span>
-          </h1>
-        </div>
-      </section>
-
-      {/* Section 4:  Projects*/}
+      {/* Section 3:  Projects*/}
       <section id="projects" className="w-full">
         <div className="flex flex-col items-center">
           <h1 className="section_title flex flex-col items-center section_title">
             Projects
+            <span className="divider"></span>
+          </h1>
+        </div>
+        <ProjectSection/>
+
+      </section>
+
+      {/* Section 4: Contact */}
+      <section id="contact" className="w-full0">
+        <div className="flex flex-col items-center">
+          <h1 className="section_title flex flex-col items-center section_title">
+            Contact
             <span className="divider"></span>
           </h1>
         </div>
