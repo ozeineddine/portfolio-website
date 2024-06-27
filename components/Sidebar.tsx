@@ -13,7 +13,7 @@ interface iconDict {
 }
 
 const sidebarIconList: iconDict[] = [
-  { icon: faInstagram, link: "https://www.instagram.com/ozisballin/" },
+  // { icon: faInstagram, link: "https://www.instagram.com/ozisballin/" },
   { icon: faGithub, link: "https://github.com/ozeineddine" },
   { icon: faLinkedin, link: "https://www.linkedin.com/in/omar-zeineddine/" },
 ];

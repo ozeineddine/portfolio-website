@@ -11,29 +11,31 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between space-y-24">
       {/* Section 1: Home*/}
       <section
-        id="home"
-        className=" flex flex-col w-full bg-majorelle-blue text-alabaster"
+        className="h-[500px] flex flex-col w-full bg-majorelle-blue text-alabaster"
       >
         <div className="container mx-auto flex flex-col items-center justify-center space-y-12">
           <h1
             id="color_"
-            className=" font-montserrat text-alabaster text-7xl pt-48 pl-20"
+            className="text-center font-montserrat text-alabaster text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl pt-40"
           >
             Hi! I'm Omar Zeineddine
           </h1>
-          <div className="flex flex-row items-center">
-            <h1 className="font-montserrat pl-24 text-5xl text-alabaster">
-              {" "}
+          <div className="flex flex-row flex-wrap items-center justify-center">
+            <h1 className="text-start font-montserrat text-alabaster text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
               I am a ...
             </h1>
             <ChangingText />
+            
           </div>
+          
+        </div>
+        <div className="flex flex-row items-center justify-center mt-10">
           <Link href="#projects">
             <button className="font-montserrat bg-majorelle-blue border-4 rounded text-alabaster font-bold py-3 px-8 hover:scale-110">
               PROJECTS
             </button>
           </Link>
-        </div>
+          </div>
       </section>
 
       {/* Section 2: About */}
@@ -47,22 +49,22 @@ export default function Home() {
         <div className=" px-20 space-x-10 flex flex-row items-start my-6">
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center">Who am I?</p>
-            <p className="p1">
+            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               Hey there! My name is Omar Zeineddine. I am currently a 4th-year
               student at the University of Virginia, majoring in computer
               science and minoring in data science.
             </p>
-            <p className="p1">
+            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               I am a currently a software engineer intern lead, working with new
               interns to guide them through their tasks as I work through my
               own.
             </p>
-            <p className="p1">
+            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               I love developing projects on the side as well. My current project
               in-progress involves creating a mobile app to track your
               experiences with a map!
             </p>
-            <p className="p1">
+            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               When I am not coding, I am either planning out my next trip, going
               on a hike, or at the gym!
             </p>

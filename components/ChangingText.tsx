@@ -32,7 +32,7 @@ const ChangingText = () => {
     }
 
     return (
-        <span className={`font-montserrat text-5xl ${fade} w-[40rem] text-left text-center inline-block`}>{shownText}</span>
+        <span className={`font-montserrat text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl ${fade} text-center w-[19rem] sm:w-[20rem] md:w-[30rem] lg:w-[36rem] xl:w-[45rem] text-left inline-block`}>{shownText}</span>
     );
 
 }

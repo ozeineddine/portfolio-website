@@ -7,6 +7,8 @@ const skills: string[] = [
   "React",
   "Tailwind",
   "Python",
+  "Django",
+  "Bootstrap CSS",
   "Java",
   "JavaFX",
   "PHP",

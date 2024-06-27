@@ -48,9 +48,12 @@ html {
 *:after {
   box-sizing: inherit;
 }
-#home {
-  height: 550px;
-}
+
+/* @media (min-width: 200px) {
+  #home {
+    height: 500px;
+  }
+} */
 
 html,
 body {
