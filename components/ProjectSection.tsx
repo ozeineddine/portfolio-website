@@ -16,12 +16,29 @@ const projects = [
     id: 1,
     link: "https://project-b-23-2023-288292ef658c.herokuapp.com/reviews/profile/",
   },
+
+  {
+    title: "Experiences Mobile App",
+    image: "/images/in_progress.jpg",
+    description:
+      "This app is currently a work in progress. I am building a react native application which will allow you to create and keep track of experiences with your own personal map, and be able to see your friends' experience maps as well.",
+    skillList: [
+      "React Native",
+      "Expo",
+      "Firebase",
+      "Heroku",
+      "NodeJS",
+      "Google Maps API",
+    ],
+    id: 2
+  },
+
   {
     title: "Wordle GUI",
     image: "/images/wordle_tall.png",
     description: "Fully functional Wordle-Clone built with Java and JavaFX",
     skillList: ["Java", "JavaFX", "Gradle"],
-    id: 2,
+    id: 3,
   },
   {
     title: "Course Review Application",
@@ -29,7 +46,7 @@ const projects = [
     description:
       "Course-Review application built using Java, JavaFX and SQLite",
     skillList: ["Java", "JavaFX", "SQLite", "Gradle"],
-    id: 3,
+    id: 4,
   },
 ];
 const ProjectSection = () => {
