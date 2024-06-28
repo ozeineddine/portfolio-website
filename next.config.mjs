@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+      loader: 'akamai',
+      path: '/',
+    },
+    basePath: '/portfolio-website',
+    assetPrefix: '/portfolio-website/',
+  };
+  
+  export default nextConfig;
+  
