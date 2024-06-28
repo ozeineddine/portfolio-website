@@ -20,7 +20,7 @@ export default function Home() {
             id="color_"
             className="text-center font-montserrat text-alabaster text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl pt-40"
           >
-            Hi! I'm Omar Zeineddine
+            Hi! I&#39;m Omar Zeineddine
           </h1>
           <div className="flex flex-row flex-wrap items-center justify-center">
             <h1 className="text-start font-montserrat text-alabaster text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
