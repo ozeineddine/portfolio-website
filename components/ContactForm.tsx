@@ -17,6 +17,9 @@ const ContactForm = () => {
       message,
       to_name: "Omar"
     };
+    console.log("sending: " + process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!);
+    console.log("sending: " + process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!);
+    console.log("sending: " + process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
 
     try {
       await emailjs.send(
