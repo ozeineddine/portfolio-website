@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   const decryptEmail = () => {
-    const encrypted = process.env.NEXT_PUBLIC_ENCRYPTED_EMAIL!;
+    const encrypted = "b2Z6ZWluZWRkaW5lQGdtYWlsLmNvbQ==";
     const decoded = atob(encrypted);
     return `mailto:${decoded}`;
   };
