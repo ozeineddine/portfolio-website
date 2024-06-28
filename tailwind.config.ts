@@ -15,6 +15,7 @@ const config: Config = {
         'alabaster': '#E3E4db',
         'gray-second': '#697477',
         'black-olive': '#363732',
+        'title_gray': '#363732',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

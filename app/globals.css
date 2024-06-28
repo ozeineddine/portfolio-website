@@ -20,6 +20,10 @@ is in dark mode. Work on later for if you want a dark color scheme.  */
 /* @media (prefers-color-scheme: dark) {
 } */
 
+body {
+  background-color: #f7f7f7;
+}
+
 html,
 body,
 #root {

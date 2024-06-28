@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 
 import Header from "@components/Header";
 import Sidebar from "@components/Sidebar";
+import Footer from "@components/Footer";
+import Sidebar1 from "@components/Sidebar1"
 
 // The following import prevents a Font Awesome icon server-side rendering bug,
 // where the icons flash from a very large icon down to a properly sized one:
@@ -35,8 +37,9 @@ export default function RootLayout({
       </head>
       <body>
         <Header></Header>
-        <Sidebar></Sidebar>
+        <Sidebar1></Sidebar1>
         <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );

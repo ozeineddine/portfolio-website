@@ -5,6 +5,8 @@ import SkillsSection from "@components/SkillsSection";
 import ChangingText from "@components/ChangingText";
 import Project from "@components/Project";
 import ProjectSection from "@components/ProjectSection";
+import ContactForm from "@components/ContactForm";
+import Footer from '@components/Footer';
 
 export default function Home() {
   return (
@@ -46,7 +48,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className=" px-20 space-x-10 flex flex-row items-start my-6">
+        <div className=" sm:px-20 px-4 space-x-4 flex flex-row items-start my-6">
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center">Who am I?</p>
             <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
@@ -96,6 +98,7 @@ export default function Home() {
             <span className="divider"></span>
           </h1>
         </div>
+        <ContactForm/>
       </section>
     </main>
   );

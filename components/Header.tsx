@@ -9,7 +9,7 @@ const header = () => {
         <Link href="#home">
           <h1 className="">Omar Zeineddine</h1>
         </Link>
-        <div className="flex flex-row">
+        <div className="flex flex-col sm:flex-row sm:w-[400px]">
           {headerList.map((item) => {
             // Creating the href variable for the anchor links for the header and sections
             const href = `#${item.toLowerCase()}`;

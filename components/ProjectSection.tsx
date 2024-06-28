@@ -21,12 +21,11 @@ const projects = [
     title: "Experiences Mobile App",
     image: "/images/in_progress.jpg",
     description:
-      "This app is currently a work in progress. I am building a react native application which will allow you to create and keep track of experiences with your own personal map, and be able to see your friends' experience maps as well.",
+      "This app is currently a work in progress. I am building a react native application which will allow you to create and keep track of experiences with your own personal map, and invite friends to collaborate on these experiences.",
     skillList: [
       "React Native",
       "Expo",
       "Firebase",
-      "Heroku",
       "NodeJS",
       "Google Maps API",
     ],
