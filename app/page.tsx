@@ -51,22 +51,22 @@ export default function Home() {
         <div className=" sm:px-20 px-4 space-x-4 flex flex-row items-start my-6">
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center">Who am I?</p>
-            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            <p className="p1 px-20 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               Hey there! My name is Omar Zeineddine. I am currently a 4th-year
               student at the University of Virginia, majoring in computer
               science and minoring in data science.
             </p>
-            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            <p className="p1 px-20 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               I am a currently a software engineer intern lead, working with new
               interns to guide them through their tasks as I work through my
               own.
             </p>
-            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            <p className="p1 px-20 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               I love developing projects on the side as well. My current project
               in-progress involves creating a mobile app to track your
               experiences with a map!
             </p>
-            <p className="p1 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+            <p className="p1 px-20 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               When I am not coding, I am either planning out my next trip, going
               on a hike, or at the gym!
             </p>
