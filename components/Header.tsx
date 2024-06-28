@@ -25,7 +25,6 @@ const header = () => {
           })}
         </div>
       </div>
-      {/* <span className="header_divider"></span> */}
     </div>
   );
 };
