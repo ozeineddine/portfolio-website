@@ -1,9 +1,11 @@
 import Project from "./Project";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio-website' : '';
+
 const projects = [
   {
     title: "Reviews Application",
-    image: "/images/reviews_tall.png",
+    image: `${basePath}/images/reviews_tall.png`,
     description:
       "Full-stack reviews application allowing you to review any place, which integrates the google maps API. Built using Django and Bootstrap and deployed through Heroku.",
     skillList: [
@@ -19,7 +21,7 @@ const projects = [
 
   {
     title: "Experiences Mobile App",
-    image: "/images/in_progress.jpg",
+    image: `${basePath}/images/in_progress.jpg`,
     description:
       "This app is currently a work in progress. I am building a react native application which will allow you to create and keep track of experiences with your own personal map, and invite friends to collaborate on these experiences.",
     skillList: [
@@ -34,14 +36,14 @@ const projects = [
 
   {
     title: "Wordle GUI",
-    image: "/images/wordle_tall.png",
+    image: `${basePath}/images/wordle_tall.png`,
     description: "Fully functional Wordle-Clone built with Java and JavaFX",
     skillList: ["Java", "JavaFX", "Gradle"],
     id: 3,
   },
   {
     title: "Course Review Application",
-    image: "/images/write_review.png",
+    image: `${basePath}/images/write_review.png`,
     description:
       "Course-Review application built using Java, JavaFX and SQLite",
     skillList: ["Java", "JavaFX", "SQLite", "Gradle"],
