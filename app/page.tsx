@@ -42,13 +42,13 @@ export default function Home() {
 
       {/* Section 2: About */}
       <section id="about" className="w-full flex flex-col items-center">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-4">
           <h1 className="flex flex-col items-center section_title">
             About <span className="divider"></span>
           </h1>
         </div>
 
-        <div className=" sm:px-20 px-4 py-4 space-x-4 flex flex-col sm:flex-row items-start my-6">
+        <div className=" sm:px-20 px-4 space-y-4 space-x-4 flex flex-col sm:flex-row items-start">
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center sm:self-center pr-2 sm:pr-0 sm:pl-4">Who am I?</p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
