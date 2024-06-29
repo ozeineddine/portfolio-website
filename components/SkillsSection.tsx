@@ -15,7 +15,7 @@ const skills: string[] = [
 ];
 const SkillsSection = () => {
   return (
-    <div className="flex flex-row flex-wrap gap-4 my-6 items-center justify-center">
+    <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
       {skills.map((skill, index) => (
         <Skill key={index} name={skill} />
       ))}
