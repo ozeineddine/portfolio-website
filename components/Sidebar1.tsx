@@ -1,8 +1,11 @@
 "use client";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio-website' : '';
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope as faSolidEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFileAlt, faEnvelope as faSolidEnvelope } from "@fortawesome/free-solid-svg-icons";
 import useWindowSize from "../hooks/useWindowSize";
 
 interface iconDict {
@@ -13,7 +16,8 @@ interface iconDict {
 const sidebarIconList: iconDict[] = [
   { icon: faGithub, link: "https://github.com/ozeineddine" },
   { icon: faLinkedin, link: "https://www.linkedin.com/in/omar-zeineddine/" },
-  { icon: faSolidEnvelope, link: "mailto:encrypted-email-placeholder" }, // Placeholder for now
+  { icon: faSolidEnvelope, link: "mailto:encrypted-email-placeholder" },
+  {icon: faFileAlt, link: `${basePath}/images/omar_z_resume.pdf`}
 ];
 
 const decryptEmail = () => {
@@ -30,7 +34,7 @@ const Sidebar = () => {
   }
 
   return (
-    <div className="flex flex-col justify-end fixed bottom-0 left-0 py-4 z-2 inset-y-0 left-0 w-16 mb-12 items-center">
+    <div className="flex flex-col justify-end fixed bottom-0 left-0 py-5 z-2 inset-y-0 left-0 w-16 mb-12 items-center">
       <div className="container mx-auto m-4">
         <div className="flex flex-col items-center">
           {sidebarIconList.map((item) => {
