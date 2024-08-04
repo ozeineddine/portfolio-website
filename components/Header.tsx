@@ -16,11 +16,11 @@ const header = () => {
             const href = item === "Resume"? `${basePath}/images/omar_z_resume.pdf` :`#${item.toLowerCase()}`;
             return (
               <div key={item} className="group hover:border-red-100 px-4">
-                <Link target="_blank" rel="noopener noreferrer" href={href}>
+                <a target="_blank" rel="noopener noreferrer" href={href}>
                   <p className="hover:scale-125 capitalize">
                     {item}
                   </p>
-                </Link>
+                </a>
               </div>
             );
           })}
