@@ -1,5 +1,6 @@
 import Link from "next/link";
-const basePath = process.env.NODE_ENV === 'production' ? '/portfolio-website' : '';
+const basePath =
+  process.env.NODE_ENV === "production" ? "/portfolio-website" : "";
 
 const header = () => {
   const headerList = ["Home", "About", "Projects", "Contact", "Resume"];
@@ -13,13 +14,18 @@ const header = () => {
         <div className="flex flex-row sm:flex-row sm:w-[400px]">
           {headerList.map((item) => {
             // Creating the href variable for the anchor links for the header and sections
-            const href = item === "Resume"? `${basePath}/images/omar_z_resume.pdf` :`#${item.toLowerCase()}`;
+            const href =
+              item === "Resume"
+                ? `${basePath}/images/omar_z_resume.pdf`
+                : `#${item.toLowerCase()}`;
             return (
               <div key={item} className="group hover:border-red-100 px-4">
-                <a target="_blank" rel="noopener noreferrer" href={href}>
-                  <p className="hover:scale-125 capitalize">
-                    {item}
-                  </p>
+                <a
+                  target={item === "Resume" ? "_blank" : "_self"}
+                  rel={item === "Resume" ? "noopener noreferrer" : ""}
+                  href={href}
+                >
+                  <p className="hover:scale-125 capitalize">{item}</p>
                 </a>
               </div>
             );
