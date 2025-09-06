@@ -48,11 +48,11 @@ export default function Home() {
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center sm:self-center pr-2 sm:pr-0 sm:pl-4">Who am I?</p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              Hey there! My name is Omar Zeineddine. I am a UVA alum (CO '25) who majored in computer science and minored in data science.
+              Hey there! My name is Omar Zeineddine. I am a UVA alum (CO &#39;25) who majored in computer science and minored in data science.
             </p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              I love developing projects on the side as well. My current project is Vlogit, a social video app I'm building for iOS with SwiftUI and Firebase!
-              We've reached 15,000+ users on the waitlist and counting!
+              I love developing projects on the side as well. My current project is Vlogit, a social video app I&#39;m building for iOS with SwiftUI and Firebase!
+              We&#39;ve reached 15,000+ users on the waitlist and counting!
             </p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               When I am not coding, I am either planning out my next trip, going
