@@ -15,7 +15,7 @@ export default function Home() {
       <section
         className="h-[500px] flex flex-col w-full bg-majorelle-blue text-alabaster"
       >
-        <div className="container mx-auto flex flex-col items-center justify-center space-y-12">
+        <div className="container mx-auto flex flex-col items-center justify-center space-y-8">
           <h1
             id="color_"
             className="text-center font-montserrat text-alabaster text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl pt-40"
@@ -23,15 +23,11 @@ export default function Home() {
             Hi! I&#39;m Omar Zeineddine
           </h1>
           <div className="flex flex-row flex-wrap items-center justify-center">
-            <h1 className="text-start font-montserrat text-alabaster text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
-              I am a ...
-            </h1>
             <ChangingText />
-            
           </div>
           
         </div>
-        <div className="flex flex-row items-center justify-center mt-10">
+        <div className="flex flex-row items-center justify-center mt-4">
           <Link href="#projects">
             <button className="font-montserrat bg-majorelle-blue border-4 rounded text-alabaster font-bold py-3 px-8 hover:scale-110">
               PROJECTS
@@ -52,19 +48,11 @@ export default function Home() {
           <div className="flex flex-col items-start space-y-5">
             <p className="section_subtitle self-center sm:self-center pr-2 sm:pr-0 sm:pl-4">Who am I?</p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              Hey there! My name is Omar Zeineddine. I am currently a 4th-year
-              student at the University of Virginia, majoring in computer
-              science and minoring in data science.
+              Hey there! My name is Omar Zeineddine. I am a UVA alum (CO '25) who majored in computer science and minored in data science.
             </p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              I am a currently a software engineer intern lead, working with new
-              interns to guide them through their tasks as I work through my
-              own.
-            </p>
-            <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              I love developing projects on the side as well. My current project
-              in-progress involves creating a mobile app to track your
-              experiences with a map!
+              I love developing projects on the side as well. My current project is Vlogit, a social video app I'm building for iOS with SwiftUI and Firebase!
+              We've reached 15,000+ users on the waitlist and counting!
             </p>
             <p className="p1 pl-8 text-left sm:text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               When I am not coding, I am either planning out my next trip, going

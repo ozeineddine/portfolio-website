@@ -26,10 +26,10 @@ const Footer = () => {
           <p className="text-sm">Created by: Omar Zeineddine</p>
         </div>
         <div className="text-center">
-          <p className="text-sm">&copy; 2024 Omar Zeineddine. All rights reserved.</p>
+          <p className="text-sm">&copy; 2025 Omar Zeineddine. All rights reserved.</p>
         </div>
         <div className="text-center sm:text-right">
-          <p className="text-sm">This app was created using React, Next.js, and Tailwind CSS</p>
+          <p className="text-sm">This website was created using React, Next.js, and Tailwind CSS</p>
         </div>
         {size.width && size.width <= 640 && (
           <div className="flex justify-center mt-4">

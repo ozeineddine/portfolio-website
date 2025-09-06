@@ -16,22 +16,21 @@ const projects = [
       "Google Maps API",
     ],
     id: 1,
-    link: "https://project-b-23-2023-288292ef658c.herokuapp.com/reviews/profile/",
   },
 
   {
-    title: "Experiences Mobile App",
-    image: `${basePath}/images/in_progress.jpg`,
+    title: "Vlogit",
+    image: `${basePath}/images/vlogit_logo.jpg`,
     description:
-      "This app is currently a work in progress. I am building a react native application which will allow you to create and keep track of experiences with your own personal map, and invite friends to collaborate on these experiences.",
+      "Building Vlogit in public: iOS social video app using SwiftUI with MVVM architecture, protocol-based dependency injection, and Firebase authentication system",
     skillList: [
-      "React Native",
-      "Expo",
+      "Swift",
+      "SwiftUI",
       "Firebase",
-      "NodeJS",
-      "Google Maps API",
+      "Cloudflare S3",
     ],
-    id: 2
+    id: 2,
+    link: "https://vlogit.app",
   },
 
   {

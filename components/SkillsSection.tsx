@@ -1,17 +1,15 @@
 import Skill from "./Skill";
 
 const skills: string[] = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "React",
-  "Tailwind",
   "Python",
+  "Javascript",
+  "HTML/CSS",
+  "Swift",
+  "SwiftUI",
+  "Firebase",
   "Django",
-  "Bootstrap CSS",
+  "Bootstrap",
   "Java",
-  "JavaFX",
-  "PHP",
 ];
 const SkillsSection = () => {
   return (
