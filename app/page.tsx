@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between space-y-24">
       {/* Section 1: Home*/}
       <section
-        className="h-[500px] flex flex-col w-full bg-majorelle-blue text-alabaster"
+        className="h-[505px] flex flex-col w-full bg-majorelle-blue text-alabaster"
       >
         <div className="container mx-auto flex flex-col items-center justify-center space-y-8">
           <h1
