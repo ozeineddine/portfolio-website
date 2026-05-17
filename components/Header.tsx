@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 
+const basePath = process.env.NODE_ENV === "production" ? "/portfolio-website" : "";
+
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -50,7 +52,7 @@ const Header = () => {
         >
           <span className="w-4 h-4 rounded-md overflow-hidden flex-shrink-0 block">
             <img
-              src="/images/vlogit_logo.jpg"
+              src={`${basePath}/images/vlogit_logo.jpg`}
               alt=""
               aria-hidden="true"
               className="w-full h-full object-cover mix-blend-multiply"
