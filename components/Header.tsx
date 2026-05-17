@@ -48,12 +48,14 @@ const Header = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-semibold text-page bg-accent hover:bg-ink px-5 py-2.5 rounded-full transition-colors"
         >
-          <img
-            src="/images/vlogit_logo.jpg"
-            alt=""
-            aria-hidden="true"
-            className="w-4 h-4 rounded-md object-cover mix-blend-multiply -translate-y-0.5"
-          />
+          <span className="w-4 h-4 rounded-md overflow-hidden flex-shrink-0 block">
+            <img
+              src="/images/vlogit_logo.jpg"
+              alt=""
+              aria-hidden="true"
+              className="w-full h-full object-cover mix-blend-multiply"
+            />
+          </span>
           View Vlogit
         </a>
       </div>

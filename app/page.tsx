@@ -90,12 +90,14 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 justify-center px-7 py-3.5 bg-accent hover:bg-ink text-page font-semibold rounded-full transition-colors text-sm"
                 >
-                  <img
-                    src={`${basePath}/images/vlogit_logo.jpg`}
-                    alt=""
-                    aria-hidden="true"
-                    className="w-5 h-5 rounded-md object-cover mix-blend-multiply -translate-y-0.5"
-                  />
+                  <span className="w-5 h-5 rounded-md overflow-hidden flex-shrink-0 block">
+                    <img
+                      src={`${basePath}/images/vlogit_logo.jpg`}
+                      alt=""
+                      aria-hidden="true"
+                      className="w-full h-full object-cover mix-blend-multiply"
+                    />
+                  </span>
                   View Vlogit
                 </a>
                 <a
