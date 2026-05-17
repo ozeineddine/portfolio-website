@@ -1,39 +1,64 @@
-import Link from "next/link";
-const basePath =
-  process.env.NODE_ENV === "production" ? "/portfolio-website" : "";
+"use client";
 
-const header = () => {
-  const headerList = ["Home", "About", "Projects", "Contact", "Resume"];
+import { useState, useEffect } from "react";
+
+const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const next = window.scrollY > 40;
+      setScrolled((prev) => (prev === next ? prev : next));
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <div className="items-center bg-majorelle-blue py-5 fixed top-0 left-0 w-full z-10 text-alabaster">
-      <div className="container mx-auto flex justify-between items-center px-4 ">
-        <Link href="#home">
-          <h1 className="">Omar Zeineddine</h1>
-        </Link>
-        <div className="flex flex-row sm:flex-row sm:w-[400px]">
-          {headerList.map((item) => {
-            // Creating the href variable for the anchor links for the header and sections
-            const href =
-              item === "Resume"
-                ? `${basePath}/images/omar_z_resume.pdf`
-                : `#${item.toLowerCase()}`;
-            return (
-              <div key={item} className="group hover:border-red-100 px-4">
-                <a
-                  target={item === "Resume" ? "_blank" : "_self"}
-                  rel={item === "Resume" ? "noopener noreferrer" : ""}
-                  href={href}
-                >
-                  <p className="hover:scale-125 capitalize">{item}</p>
-                </a>
-              </div>
-            );
-          })}
-        </div>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-page/90 backdrop-blur-md border-b border-ink/[0.08]"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 md:px-16 py-5 flex justify-between items-center">
+        <a
+          href="#"
+          className="font-barlow font-black text-xl tracking-tight text-ink hover:text-accent transition-colors"
+        >
+          OZ
+        </a>
+
+        <nav className="hidden md:flex items-center gap-8 text-sm text-muted font-epilogue">
+          <a href="#vlogit" className="hover:text-ink transition-colors">
+            Vlogit
+          </a>
+          <a href="#journey" className="hover:text-ink transition-colors">
+            Journey
+          </a>
+          <a href="#story" className="hover:text-ink transition-colors">
+            Story
+          </a>
+        </nav>
+
+        <a
+          href="https://vlogit.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-page bg-accent hover:bg-ink px-5 py-2.5 rounded-full transition-colors"
+        >
+          <img
+            src="/images/vlogit_logo.jpg"
+            alt=""
+            aria-hidden="true"
+            className="w-4 h-4 rounded-md object-cover mix-blend-multiply -translate-y-0.5"
+          />
+          View Vlogit
+        </a>
       </div>
-    </div>
+    </header>
   );
 };
 
-export default header;
+export default Header;
